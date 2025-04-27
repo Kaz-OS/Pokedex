@@ -1,0 +1,75 @@
+
+body {
+    background-color: #dc0a2d;
+    padding: 4px 4px;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    & h1 {
+        color: white;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-left: 1rem;
+        & img {
+            height: 24px;
+            width: 24px;
+        }
+    }
+    .searchbar {
+        display: flex;
+        justify-content: center;
+        & input {
+            border-radius: 25px;
+            background-color: white;
+        }
+    }
+}
+
+main {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    margin-top: 24px;
+    background-color:white;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 8px;
+    & .Pokemon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow:  5px 5px 11px 5px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        width: 104px;
+        height: 108px;
+        & p {
+            display: flex;
+            margin-top: -0.3rem;
+            padding: 8px;
+            font-size: 8px;
+            justify-content: end;
+        }
+        & img {
+            position: absolute;
+            margin: 15px;
+            height: 72px;
+            width: 72px;
+        }
+        & .grey {
+            background-color: #EFEFEF;
+            border-radius: 7px;
+            & h3 {
+                display: flex;
+                justify-content: center;
+                font-size: 12px;
+            }
+        }
+    }
+}
