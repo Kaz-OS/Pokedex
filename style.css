@@ -2,8 +2,8 @@
 body {
     background-color: #dc0a2d;
     padding: 4px 4px;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 25rem;
+    margin-right: 25rem;
 }
 
 header {
@@ -41,6 +41,13 @@ main {
     padding-left: 12px;
     padding-right: 12px;
     border-radius: 8px;
+    & .Pokedex {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }  
     & .Pokemon {
         display: flex;
         flex-direction: column;
@@ -73,3 +80,5 @@ main {
         }
     }
 }
+
+      
