@@ -33,6 +33,10 @@ header {
     }
 }
 
+a {
+    text-decoration: none;
+}
+
 main {
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -81,4 +85,13 @@ main {
     }
 }
 
-      
+.Pokemon {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.Pokemon:hover {
+  transform: perspective(800px) translateZ(30px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
